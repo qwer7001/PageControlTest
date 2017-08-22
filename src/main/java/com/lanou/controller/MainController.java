@@ -47,4 +47,10 @@ public class MainController {
         PageInfo<Message> pageInfo = service.queryPage(pn,ps);
         return pageInfo;
     }
+
+    @RequestMapping(value = "/test")
+    @ResponseBody
+    public String gittest() {
+        return "bbb";
+    }
 }
