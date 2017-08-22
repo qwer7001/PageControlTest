@@ -53,4 +53,8 @@ public class MainController {
     public String gittest() {
         return "bbb";
     }
+
+    public void test() {
+        System.out.println(1111);
+    }
 }
