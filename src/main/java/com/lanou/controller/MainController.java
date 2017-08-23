@@ -62,8 +62,7 @@ public class MainController {
     @RequestMapping(value = "/branch")
     @ResponseBody
     public String branchTest() {
-
-        // sssssss
+        System.out.println("测试冲突");
         return "branch";
     }
 }
