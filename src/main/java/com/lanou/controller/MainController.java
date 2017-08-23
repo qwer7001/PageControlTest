@@ -3,6 +3,7 @@ package com.lanou.controller;
 import com.github.pagehelper.PageInfo;
 import com.lanou.bean.Message;
 import com.lanou.service.MessageService;
+import org.junit.Test;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -62,6 +63,7 @@ public class MainController {
     @RequestMapping(value = "/branch")
     @ResponseBody
     public String branchTest() {
+        System.out.println("测试冲突");
         return "branch";
     }
 }
